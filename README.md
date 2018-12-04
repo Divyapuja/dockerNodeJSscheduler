@@ -1,5 +1,5 @@
 # divya-11202018
-The goal of this interview coding task is to create a NodeJS application that runs a process every Monday at 7AM EST which retrieves the following data from GitHub for the public node repository (https://github.com/nodejs/node).
+The goal of this project is to create a NodeJS application that runs a process every Monday at 7AM EST which retrieves the following data from GitHub for the public node repository (https://github.com/nodejs/node).
 
 1. Number of open issues
 2. Number of branches
@@ -20,7 +20,7 @@ If user does not have Docker installed, use
 sudo apt -y install docker.io
 ```
 ## Build the application on Docker
-I have used <image_name> as ibm/node-git-app. Feel free to use any other name as you like.
+I have used <image_name> as USA/node-git-app. Feel free to use any other name as you like.
 ```
 git clone https://github.com/SETS-Interviews/divya-11202018.git
 cd divya-11202018
@@ -31,7 +31,7 @@ docker build -t ibm/node-git-app .
 
 To avoid inspecting github token in docker history, it is recommanded to run this application as
 ```
-docker run --env GITHUB_TOKEN=<USER'S_TOKEN> ibm/node-git-app
+docker run --env GITHUB_TOKEN=<USER'S_TOKEN> USA/node-git-app
 ```
 If everything is successfully configured and installed, you should see a similar output after running the application in Docker
 ![outputFromDocker](https://github.com/SETS-Interviews/divya-11202018/blob/dev/ScreenShots/outputFromDocker.PNG)
