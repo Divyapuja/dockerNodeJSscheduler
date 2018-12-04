@@ -1,4 +1,3 @@
-# divya-11202018
 The goal of this project is to create a NodeJS application that runs a process every Monday at 7AM EST which retrieves the following data from GitHub for the public node repository (https://github.com/nodejs/node).
 
 1. Number of open issues
